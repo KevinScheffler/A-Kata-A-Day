@@ -7,7 +7,7 @@ function descendingOrder(n) {
     return parseInt(String(n).split('').sort().reverse().join(''));
 }
 
-console.log(descendingOrder(123456789));
+// console.log(descendingOrder(123456789));
 
 
 /* Function 1 - hello world
@@ -16,5 +16,18 @@ Make a simple function called greet that returns the most-famous "hello world!".
 
 greet = () => 'hello world!';
 
-console.log(greet());
+// console.log(greet());
 
+
+
+
+/*
+Complete the method that takes a boolean value and return a
+ "Yes" string for true, or a "No" string for false.
+*/
+
+function boolToWord( bool ){
+    return (bool ? 'Yes' : 'No')
+  }
+
+  console.log(boolToWord(false));
