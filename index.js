@@ -30,4 +30,27 @@ function boolToWord( bool ){
     return (bool ? 'Yes' : 'No')
   }
 
-  console.log(boolToWord(false));
+//   console.log(boolToWord(false));
+
+
+
+/* Convert Celsius to Fahrenheit */
+
+function convertToF(celsius) {
+    let fahrenheit = celsius * 9 /5 + 32;
+    return fahrenheit;
+}
+
+// console.log(convertToF(30))
+
+
+// Reverse a String
+
+function reverseString(str) {
+    let reversed;
+    reversed = str.split('').reverse().join('');
+    return reversed;
+}
+
+console.log(reverseString("hello"));
+
