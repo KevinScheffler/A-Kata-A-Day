@@ -79,15 +79,42 @@ function hero(bullets, dragons) {
 
 
 
-console.log(hero(10, 5));
-console.log(hero(7, 4));
-console.log(hero(4, 5));
-console.log(hero(100, 40));
-console.log(hero(1500, 751));
-console.log(hero(0, 1));
+// console.log(hero(10, 5));
+// console.log(hero(7, 4));
+// console.log(hero(4, 5));
+// console.log(hero(100, 40));
+// console.log(hero(1500, 751));
+// console.log(hero(0, 1));
 
 
 
+/*
+Given: a sequence of different type of values (number, string, boolean).
+You should return an object with a separate properties for each of types presented
+ in input. Each property should contain an array of corresponding values.
+
+keep order of values like in input array
+if type is not presented in input, no corresponding property are expected
+
+*/
 
 
+function separateTypes(input) {
+    return input.reduce((types, value) => {
+        const valueType = typeof value
+        const type = types[valueType]
+        types[valueType] = type ? [...type, value] : [value]
+        return types
+    }, {})
+}
 
+// console.log(separateTypes(['a', 1, 2, false, 'b']));
+
+
+// reduce
+let numbers = [6, 42, 4, 81, 56, 33];
+
+// Accumulator and current value
+let reducedValue = numbers.reduce((acc, cur) => acc + cur);
+
+console.log(reducedValue);
