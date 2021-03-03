@@ -129,5 +129,24 @@ function warnTheSheep(queue) {
     return `Oi! Sheep number ${sheepIndex} You are about to be eaten by a wolf`;
 }
 
-console.log(warnTheSheep(["sheep", "sheep", "sheep", "sheep", "sheep", "wolf", "sheep", "sheep"]))
-console.log(warnTheSheep(["sheep", "wolf", "sheep", "sheep", "sheep", "sheep", "sheep"]))
+// console.log(warnTheSheep(["sheep", "sheep", "sheep", "sheep", "sheep", "wolf", "sheep", "sheep"]))
+// console.log(warnTheSheep(["sheep", "wolf", "sheep", "sheep", "sheep", "sheep", "sheep"]))
+
+
+
+
+/*
+Given a non-empty array of integers,
+ return the result of multiplying the
+  values together in order.
+*/
+
+function grow(x) {
+    multiplied = 1
+    for(let i = 0; i < x.length; i++) {
+        multiplied *= x[i];
+    }
+    return multiplied;
+}
+
+console.log(grow([2, 2, 2, 2, 2, 2]));
