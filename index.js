@@ -174,4 +174,10 @@ function preFizz(n) {
     return arr;
 }
 
-console.log(preFizz(5))
+// console.log(preFizz(5))
+
+// Implement a function which multiplies two numbers.
+
+multiply = (num1, num2) => num1 * num2;
+
+console.log(multiply(110, 102));
